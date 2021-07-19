@@ -145,28 +145,34 @@ h2{
 
  }
 
-    .close {
-        width: 50px;
-        height: 50px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        margin-left: 830px;
-        transform: translate(90px,-660px);
-    }
+ .close-button-container {
+    height: 0;
+    display: block;
+    text-align: right;
+}
+
+.close {
+    display: inline-block;
+    position: relative;
+    top: -26px;
+    right: -26px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
 
     .close:active{
         opacity: 0.6;
     }
     
-.forms-area{
-    width: 60%;
-    max-width: 1000px;
-    background: white;
-    border-radius: 1%;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6% 0;
-}
+    .forms-area {
+        background: white;
+        border-radius: 1%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 6% 0;
+    }
 
 .description{
     text-align: center;
@@ -201,6 +207,12 @@ h2{
     border: none;
     border-radius: 3%;
 }
+.forms-area-container {
+    display: block;
+    width: 60%;
+    max-width: 1000px;
+}  
+
 
 .submit:active{
     opacity: 0.6;
@@ -321,9 +333,7 @@ input:required:invalid, input:focus:invalid {
     .p2{
         font-size: 15px;
     }
-    .forms-area{
-        width: 80%;
-    }
+
     .circle{
         width: 40px;
         height: 40px;
@@ -337,5 +347,8 @@ input:required:invalid, input:focus:invalid {
     }
     .email{
         width: 250px;
+    }
+    .forms-area-container{
+        width: 80%;
     }
 }
