@@ -6,56 +6,63 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 div{
     display:flex;
 }
 
 #container{
-    width: 1200px;
+    width: 100%;
     display:flex;
     flex-direction: column;
 }
 
 #header{
     background: red;
-    height: 600px;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 7% 0;
 }
 
 .title1 {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 0;
    margin-top:0;
+   text-align: center;
 }
 
 .title2 {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .images{
-    width: 760px;
-    height: 360px;
+    width: 75%;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
    margin-top: 40px;
-   
+   align-items: center;
+    justify-content: center;
+
 }
 
 .image{
-    height: 180px;
-    width: 190px;
-    background: rgb(231, 70, 70);
-    transition: transform .2s; /* Animation */
+    height: 250px;
+    width: 250px;
+    background: rgb(235, 81, 81);
+    transition: transform .2s; /* Animation */;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .photo{
@@ -76,9 +83,6 @@ div{
 }
 
 .icon{
-    width: 30px;
-    height: 30px;
-   padding-top: 45px;
    margin-bottom:10px;
    
 }
@@ -91,7 +95,7 @@ div{
 h2{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; color: white;
-    font-size: 18px; 
+    font-size: 20px; 
     margin-bottom: 0;
     margin-top: 4px;
 }
@@ -99,58 +103,55 @@ h2{
 .p2{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; color: white;
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 0;
 }
 
 #content{
     background: rgb(46, 144, 209);
-    height: 650px;
+    padding: 7% 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-    .circle {
+.circle {
         text-align: center;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         border: 2px solid #fff;
         border-radius: 50%;
         display: block;
         margin-bottom: 20px;
         margin-top: 20px;
-    }
+}
       
-    .circle:after {
+.circle:after {
         text-align: center;
-        vertical-align: middle;
         content: '';
         display: inline-block;
-        margin-top: 8px;
+        margin-top: 25%;
         width: 15px;
         height: 15px;
         border-top: 2px solid #fff;
         border-right: 2px solid #fff;
-        -moz-transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
         transform: rotate(135deg);
-    }
+}
 
-    .triangle{
-        border-left: 30px solid transparent;
-        border-right: 30px solid transparent;
+.triangle{
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
         border-bottom:35px solid white;
 
-    }
+ }
 
     .close {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         border: 2px solid #fff;
         border-radius: 50%;
         margin-left: 830px;
-        transform: translate(-120px,-365px);
+        transform: translate(90px,-660px);
     }
 
     .close:active{
@@ -158,20 +159,21 @@ h2{
     }
     
 .forms-area{
+    width: 60%;
+    max-width: 1000px;
     background: white;
-    width: 600px;
-    height: 350px;
     border-radius: 1%;
     flex-direction: column;
     justify-content: center;
+    padding: 6% 0;
 }
 
 .description{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 25px;
     color: gray;
-    width:510px;
+    width:80%;
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 30px;
@@ -179,8 +181,8 @@ h2{
 }
 
 .form{
-    width: 350px;
-    height: 30px;
+    width: 60%;
+    height: 40px;
     margin-bottom: 10px;
 }
 
@@ -269,6 +271,7 @@ width: 9px;
     margin-top: 20px;
     color: white;
 }
+
 .subscribe:active{
     opacity: 0.6;
 }
@@ -288,14 +291,51 @@ width: 9px;
     font-size: 15px;
     padding-top: 15px;
 }
+
 input:required:invalid, input:focus:invalid {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAT1JREFUeNpi/P//PwMpgImBRMACY/x7/uDX39sXt/67cMoDyOVgMjBjYFbV/8kkqcCBrIER5KS/967s+rmkXxzI5wJiRSBm/v8P7NTfHHFFl5mVdIzhGv4+u///x+xmuAlcdXPB9KeqeLgYd3bDU2ZpRRmwH4DOeAI07QXIRKipYPD35184/nn17CO4p/+cOfjl76+/X4GYAYThGn7/g+Mfh/ZZwjUA/aABpJVhpv6+dQUjZP78Z0YEK7OezS2gwltg64GmfTu6i+HL+mUMP34wgvGvL78ZOEysf8M1sGgZvQIqfA1SDAL8iUUMPIFRQLf+AmMQ4DQ0vYYSrL9vXDz2sq9LFsiX4dLRA0t8OX0SHKzi5bXf2HUMBVA0gN356N7p7xdOS3w5fAgcfNxWtn+BJi9gVVBOQfYPQIABABvRq3BwGT3OAAAAAElFTkSuQmCC);
     background-position: right top;
     background-repeat: no-repeat;
   }
+
  input:required:valid {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZZJREFUeNpi/P//PwMpgImBRMAy58QshrNPTzP8+vOLIUInisFQyYjhz98/DB9/fmT48/+35v7H+8KNhE2+WclZd+G0gZmJmYGThUNz1fUVMZtvbWT59eUXG9wGZIWMUPj993eJ5VeWxuy8veM/CzPL3yfvH/9H0QBSBDYZyOVm4mGYfn6q4cory5lYmFh+MrEwM/76/YsR7mk2ZjbWP///WP37/y8cqIDhx58fjvtu7XV6//ndT34G/v8FasUsDjKO/+A2PP3wpGLd+TVsfOz8XH6KAT+nHpokcu7h6d9q/BoMxToVbBYqlt9///+1GO4/WVdpXqY/zMqXn13/+vTjI9mj94/y//v9/3e9ZRObvYbDT0Y2xnm///x+wsfHB3GSGLf41jb3rv0O8nbcR66d+HPvxf2/+YZFTHaqjl8YWBnm/vv37yly5LL8+vuLgYuVa3uf/4T/Kd8SnSTZpb6FGUXwcvJxbAPKP2VkZESNOBDx8+9PBm4OwR1TwmYwcfzjsBUQFLjOxs52A2YyKysrXANAgAEA7buhysQuIREAAAAASUVORK5CYII=);
     background-position: right top;
     background-repeat: no-repeat;
   }
-  
+
+  @media screen and (max-width: 768px) {
+    .image{
+        height: 250px;
+        width: 250px;
+    }
+    .title1 {
+        font-size: 20px;
+    }
+    .title2 {
+        font-size: 15px;
+    }
+    .h2{
+        font-size: 15px;
+    }
+    .p2{
+        font-size: 15px;
+    }
+    .forms-area{
+        width: 80%;
+    }
+    .circle{
+        width: 40px;
+        height: 40px;
+    }
+    .triangle{
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .email{
+        width: 250px;
+    }
+}
